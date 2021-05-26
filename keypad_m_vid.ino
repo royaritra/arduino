@@ -28,11 +28,11 @@ void setup() {
     Serial.begin(9600);
     
 }
-int getKeypadIntegerMulti()
+long getKeypadIntegerMulti()
 {
   
-  int value = 0;                                // the number accumulator
-  int keyvalue;                                     // the key pressed at current moment
+  long value = 0;                                // the number accumulator
+  long keyvalue;                                     // the key pressed at current moment
   int isnum;
   Serial.println("Enter the digits,press any non-digit to end ");
   Serial.print("You have typed: ");
